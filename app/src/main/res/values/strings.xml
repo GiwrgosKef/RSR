@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">RSR</string>
+    <string name="over_title">Over RSR</string>
+    <string name="main_title">RSR Revalidatieservice</string>
+    <string name="title_activity_rsrpenchhulp1">RSR Penchhulp</string>
+    <string name="rsr_penchhulp">RSR Penchhulp</string>
+    <string name="bel_rsr">Bel RSR nu</string>
+    <string name="overRSRtext">Met de hulpmiddelen van RSR blijft u mobiel. RSR is de leverancier
+        van hulpmiddelen in de regio Noordoost-Nederland. Gedegen kennis en jarenlarge
+        ervaring zit in ons DNA verweven en leidt tot het beste advies.\n\n
+        Wilt u meer weten over onze producten en diensten, kijk dan op www.rsr.nl of bezoek onze
+        showrooms in Silvolde en Nieuwleusen. We zijn iedere werkdag geopend van 8.00 tot 17.00
+        uur. Hier kunt u diverse hulpmiddelen uitproberen en rustig bekijken wat goed bij uw situatie
+        aansluit. Samen met u zoeken we naar het hulpmiddel dat bij u past. RSR maakt mensen mobiel.
+    </string>
+    <string name="belkosten">\nBelkosten\n\nVoor dit nummer betaalt u uw \n gebruikelijke belkosten.</string>
+    <string name="annuleren">Annuleren</string>
+    <string name="bel_nu">Bel nu</string>
+    <string name="number">0900–7788990</string>
+    <string name="Neem">Neem contact op met RSR Nederland</string>
+    <string name="cost">9,4 cent per gesprek plus 2,8 cent per minuut, plus uw gebruikelijke belkosten.</string>
+    <string name="uw_locatie">Uw Locatie:</string>
+    <string name="top_photo">Top Photo</string>
+    <string name="over_bottom_img">Over bottom img</string>
+    <string name="splash_bottom_img">splash_bottom_img</string>
+    <string name="splash_top_img">splash_top_img</string>
+    <string name="bg_img">bg_img</string>
+    <string name="tel_icon">tel_icon</string>
+    <string name="clock_timer">clock_timer</string>
+
+</resources>

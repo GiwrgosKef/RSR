@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RSRPenchhulp">
+
+    <Button
+        android:id="@+id/call_btn"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorLightBlue"
+        android:drawableStart="@drawable/main_btn_phone"
+        android:drawablePadding="-30dp"
+        android:paddingEnd="@dimen/no_dp"
+        android:paddingStart="20dp"
+        android:text="@string/bel_nu"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_text"
+        app:layout_constraintEnd_toEndOf="@+id/main_text"
+        app:layout_constraintStart_toStartOf="@+id/main_text" />
+
+    <View
+        android:layout_width="273dp"
+        android:layout_height="2dp"
+        android:background="@color/underline"
+        app:layout_constraintEnd_toEndOf="@+id/call_btn"
+        app:layout_constraintStart_toStartOf="@+id/call_btn"
+        app:layout_constraintTop_toBottomOf="@+id/call_btn" />
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="288dp"
+        android:layout_height="209dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorYellow"
+        android:text="@string/belkosten"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/close_btn"
+        android:layout_width="107dp"
+        android:layout_height="25dp"
+        android:background="@color/colorLightBlue"
+        android:drawableStart="@drawable/main_btn_close"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/annuleren"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/main_text"
+        app:layout_constraintStart_toStartOf="@+id/main_text" />
+
+</android.support.constraint.ConstraintLayout>

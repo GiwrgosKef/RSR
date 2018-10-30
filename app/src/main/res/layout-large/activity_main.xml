@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_large"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/underline"
+        android:elevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bg_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/main_bg"
+        android:contentDescription="@string/bg_img"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_bg" />
+
+    <Button
+        android:id="@+id/btnRSR"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="@dimen/half_dp"
+        android:layout_marginStart="@dimen/half_dp"
+        android:background="@color/colorLightBlue"
+        android:drawablePadding="-30dp"
+        android:drawableStart="@drawable/main_btn_warning"
+        android:paddingEnd="@dimen/no_dp"
+        android:paddingStart="20dp"
+        android:text="@string/rsr_penchhulp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnOverRSR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:layout_width="280dp"
+        android:layout_height="2dp"
+        android:background="@color/underline"
+        app:layout_constraintEnd_toEndOf="@+id/btnRSR"
+        app:layout_constraintStart_toStartOf="@+id/btnRSR"
+        app:layout_constraintTop_toBottomOf="@+id/btnRSR" />
+
+    <Button
+        android:id="@+id/btnOverRSR"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorLightBlue"
+        android:drawablePadding="-30dp"
+        android:drawableStart="@drawable/main_i"
+        android:paddingEnd="@dimen/no_dp"
+        android:paddingStart="20dp"
+        android:text="@string/over_title"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_img"
+        app:layout_constraintEnd_toEndOf="@+id/btnRSR"
+        app:layout_constraintStart_toStartOf="@+id/btnRSR" />
+
+    <View
+        android:layout_width="280dp"
+        android:layout_height="2dp"
+        android:background="@color/underline"
+        app:layout_constraintEnd_toEndOf="@+id/btnOverRSR"
+        app:layout_constraintStart_toStartOf="@+id/btnOverRSR"
+        app:layout_constraintTop_toBottomOf="@+id/btnOverRSR" />
+
+</android.support.constraint.ConstraintLayout>

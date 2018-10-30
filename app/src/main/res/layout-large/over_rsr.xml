@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OverRSR">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/underline"
+        android:elevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/over_top_img"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@color/colorLightBlue"
+        android:contentDescription="@string/top_photo"
+        android:paddingBottom="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info_bg" />
+
+    <TextView
+        android:id="@+id/over_main_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:autoLink="web"
+        android:autoSizeMaxTextSize="30sp"
+        android:autoSizeMinTextSize="14sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/overRSRtext"
+        android:textColor="@android:color/black"
+        android:textColorLink="@color/colorLightBlue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/over_top_img" />
+
+    <ImageView
+        android:id="@+id/over_bottom_img"
+        android:layout_width="wrap_content"
+        android:layout_height="98dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/over_main_text"
+        app:layout_constraintVertical_bias="0.882"
+        app:srcCompat="@drawable/splash_logo_rsr"
+        android:contentDescription="@string/over_bottom_img" />
+
+</android.support.constraint.ConstraintLayout>

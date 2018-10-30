@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".RSRPenchhulp">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/underline"
+        android:elevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.RSRPenchhulp" />
+
+    <Button
+        android:id="@+id/RSRP_main_btn"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_dp"
+        android:layout_marginEnd="@dimen/half_dp"
+        android:layout_marginLeft="@dimen/half_dp"
+        android:layout_marginRight="@dimen/half_dp"
+        android:layout_marginStart="@dimen/half_dp"
+        android:background="@color/colorLightBlue"
+        android:drawableStart="@drawable/main_btn_tel"
+        android:drawablePadding="-30dp"
+        android:paddingEnd="@dimen/no_dp"
+        android:paddingStart="20dp"
+        android:text="@string/bel_rsr"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:layout_width="287dp"
+        android:layout_height="2dp"
+        android:background="@color/underline"
+        app:layout_constraintEnd_toEndOf="@+id/RSRP_main_btn"
+        app:layout_constraintStart_toStartOf="@+id/RSRP_main_btn"
+        app:layout_constraintTop_toBottomOf="@+id/RSRP_main_btn" />
+
+    <ImageView
+        android:id="@+id/clockTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/map"
+        app:srcCompat="@drawable/clock_mini"
+        android:contentDescription="@string/clock_timer" />
+
+</android.support.constraint.ConstraintLayout>
